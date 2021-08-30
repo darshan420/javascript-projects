@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uBVVOUSGEtR-tYrQHEMQ0gHaEK%26pid%3DApi&f=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(218, 244, 249, 1) 100%); */
+    padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #00b7ff;
+    padding: 10px 0;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#digital-clock {
+    position: absolute;
+    top: 55%;
+    color: #ffffff;
+    font-size: 7em;
+    background-color: transparent;
+    font-family: Arial;
+    word-break: none;
+    padding: 20px auto;
+    /* text-shadow: 0px 0px 50px; */
+}
+
+#analog-clock {
+    position: absolute;
+    top: 15%;
+    height: 20vw;
+    /*to make the height and width responsive*/
+    width: 20vw;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F02%2FAnalogue_clock_face.svg%2F1024px-Analogue_clock_face.svg.png&f=1&nofb=1) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+
+#hour,
+#minutes,
+#seconds {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+#minutes {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#seconds {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #digital-clock {
+        top: 50%;
+        font-size: 4em;
+    }
+
+    #analog-clock {
+        top: 20%;
+        height: 50vw;
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
