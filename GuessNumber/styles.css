@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #363237;
+
+}
+
+h1 {
+    color: #2d4262;
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    margin: 3rem auto;
+    -webkit-box-shadow: 0px 2px 8px 2px #000000;
+    box-shadow: 0px 2px 8px 2px #000000;
+    background-color: #d09683;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input {
+    margin: 0.7rem 0 1.5rem 0;
+    height: 2rem;
+    width: 80%;
+
+}
+
+button {
+    padding: 8px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    background-color: #b3c100;
+}
+
+.toaster {
+    margin: 1rem 0;
+    color: white;
+    transition: .8s ease-in-out;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.toaster.wrong {
+    background-color: #d0243c;
+}
+
+.toaster.right {
+    background-color: #4bb543;
+}
+
+.lastguessed {
+    margin-top: 1rem;
+    letter-spacing: 3px;
+}
+
+.reset-btn {
+    padding: 5px;
+    margin: 0 auto;
+    display: none;
+    background-color: #73605b;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}
