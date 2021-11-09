@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">String Methods</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="string-input"
+            >Enter the text on which you want to apply string methods</label
+          >
+          <input id="string-input" type="text" />
+        </div>
+        <div class="form-group">
+          <div class="select">
+            <label for="method-select">Choose a Method:</label>
+            <select
+              name="methods"
+              id="method-select"
+              onchange="selectedMethodFunction(this)"
+            >
+              <option value="toUpperCase" selected>toUpperCase()</option>
+              <option value="toLowerCase">toLowerCase()</option>
+              <option value="trim">trim()</option>
+              <option value="charAt">charAt(position)</option>
+              <option value="substr">substr(start)</option>
+              <option value="substr">substr(start,length)</option>
+              <option value="indexOf">indexOf(string)</option>
+              <option value="concat">concat(string)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="first-parameter-input" placeholder="" />
+          <input type="text" id="second-parameter-input" placeholder="" />
+        </div>
+        <div class="form-group">
+          <button type="submit">Apply Method</button>
+        </div>
+      </form>
+      <div class="output">
+        <h5>Output:</h5>
+        <p id="string-output"></p>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
